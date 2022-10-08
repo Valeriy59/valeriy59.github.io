@@ -1,19 +1,20 @@
 import React from 'react'
 import classes from './Message.module.css'
 
-type messagePropsType = {
+type MessagePropsType = {
     avatar: string
     name: string
     message: string
     time: string
 }
 
-function Message(props: messagePropsType) {
+function Message(props: MessagePropsType) {
     return (
         <div className={classes.container}>
             <div className={classes.avatar}>
                 <img src={props.avatar}/>
             </div>
+            <div className={classes.angle}></div>
             <div className={classes.message}>
                 <div className={classes.name}>
                     {props.name}

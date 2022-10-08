@@ -1,4 +1,6 @@
 .container  {
+    display: flex;
+    align-items: flex-end;
     border: 2px solid #dedede;
     background-color: greenyellow;
     border-radius: 5px;
@@ -7,18 +9,21 @@
 }
 
 .message {
-    background-color: black;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px 5px 5px 0;
     padding: 10px;
-    margin-left: 70px;
-    width: 300px;
+
 }
 .avatar > img {
-    float: left;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3));
 }
 /* Стиль строки с временем */
 .time {
@@ -31,15 +36,8 @@
 }
 .text {
     color: darkolivegreen;
+    word-wrap: break-word;
+    min-width: 150px;
+    max-width: 300px;
 }
 
-.message::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(40px at top left, transparent 50%, rgba(79, 79, 79, 0.6) 0) no-repeat right bottom;
-}

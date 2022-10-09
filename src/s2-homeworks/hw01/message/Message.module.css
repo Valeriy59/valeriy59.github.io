@@ -1,0 +1,54 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    border: 2px solid #dedede;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: max-content;
+}
+
+.imageAndText {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px 5px 5px 0;
+    padding: 10px;
+}
+
+.imageAndText img {
+    height: 50px;
+    width: 50px;
+}
+
+.text {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px 5px 5px 0;
+    padding: 10px;
+}
+
+.text:after {
+
+}
+
+.name {
+    color: violet;
+}
+
+.messageText {
+    color: darkolivegreen;
+    word-wrap: break-word;
+
+}
+
+.time {
+    align-items: flex-end;
+    color: #aaa;
+}
+
+.angle {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 15px, rgba(255, 255, 255, 0.3));
+}
